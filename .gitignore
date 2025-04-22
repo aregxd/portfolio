@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Vite build output
+/dist/
+
+# Vite cache
+/.vite/
+
+# dotenv environment variables file
+.env
+.env.local
+.env.*.local
+
+# IDE or editor specific files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log

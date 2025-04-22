@@ -1,0 +1,20 @@
+/* Google Fonts: Poppins, Roboto, Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap');
+
+/* Cubano font (local font) */
+@font-face {
+  font-family: 'Cubano';
+  src: url('/src/assets/fonts/Cubano.ttf') format('truetype');  /* Path to your Cubano font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global default font (Poppins) */
+body {
+  font-family: 'Poppins', sans-serif;
+}
