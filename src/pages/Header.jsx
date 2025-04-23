@@ -62,16 +62,16 @@ const Header = () => {
           {/* Left: Menu */}
           <div className="flex-1 flex justify-center sm:justify-start gap-4 sm:gap-6 text-xs sm:text-sm md:text-base">
             <span
-              onClick={() => scrollToSection("about")}
-              className={menuItemClass("about")}
-            >
-              About
-            </span>
-            <span
               onClick={() => scrollToSection("tech")}
               className={menuItemClass("tech")}
             >
               Tech Stack
+            </span>
+            <span
+              onClick={() => scrollToSection("about")}
+              className={menuItemClass("about")}
+            >
+              About
             </span>
             <span
               onClick={() => scrollToSection("projects")}

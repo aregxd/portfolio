@@ -60,7 +60,7 @@ const FlipText = ({ text }) => (
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-auto bg-gray-900 flex items-start justify-start px-4 sm:px-6 md:px-10 py-20">
+    <section className="relative w-full bg-gray-900 flex items-start justify-start px-4 sm:px-6 md:px-10 pt-8">
       <motion.div
         className="z-10 text-left max-w-screen-md w-full mx-auto"
         initial={{ opacity: 0, y: 30 }}
@@ -71,9 +71,9 @@ const Hero = () => {
           Hi <span className="inline-block">👋</span>,
         </h1>
 
-        <h3 className="mt-4 text-5xl sm:text-6xl lg:text-7xl font-extrabold uppercase font-['Poppins']">
-          <span className="text-white text-3xl sm:text-4xl lg:text-5xl mr-2">
-            I'm{" "}
+        <h3 className="mt-3 sm:mt-4 text-5xl sm:text-6xl lg:text-7xl font-extrabold  font-['Poppins']">
+          <span className="text-white font-pacifico text-3xl sm:text-4xl lg:text-5xl mr-4">
+            I'm
           </span>
           <span className="bg-gradient-to-r from-[#13B0F5] to-[#0051a7] text-transparent bg-clip-text text-4xl sm:text-5xl lg:text-6xl">
             Aprim Regmi
@@ -81,11 +81,11 @@ const Hero = () => {
         </h3>
 
         {/* Web Developer text with flip animation */}
-        <div className="mt-4">
+        <div className="mt-5">
           <FlipText text="Web Developer" />
         </div>
 
-        <p className="mt-6 text-lg sm:text-xl lg:text-2xl font-medium text-gray-300 leading-relaxed">
+        <p className="mt-8 text-lg sm:text-xl lg:text-2xl font-medium text-gray-300 leading-relaxed">
           Full-stack web developer, continuously exploring new technologies to
           create scalable and efficient solutions. I craft impactful web
           experiences and build tools that drive innovation.
