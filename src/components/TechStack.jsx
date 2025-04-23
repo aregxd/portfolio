@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import {
   FaReact,
   FaNodeJs,
-  FaHtml5,
   FaGitAlt,
   FaGithub,
   FaJsSquare,
@@ -11,6 +10,7 @@ import {
 import { SiAppwrite } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
+import { SiSocketdotio, SiExpress } from "react-icons/si";
 
 const MarqueeItem = ({ items, from, to }) => {
   return (
@@ -21,7 +21,7 @@ const MarqueeItem = ({ items, from, to }) => {
           animate={{ x: to }}
           initial={{ x: from }}
           transition={{
-            duration: 60,
+            duration: 20,
             repeat: Infinity,
             ease: "linear",
           }}
@@ -31,13 +31,19 @@ const MarqueeItem = ({ items, from, to }) => {
             <motion.div
               key={index}
               whileHover={{ scale: 1.05 }}
-              className="flex items-center bg-gray-800 p-4 rounded-lg text-white w-48 h-16 cursor-pointer transition-all"
+              className="flex items-center bg-gray-800 p-3 sm:p-4 rounded-lg text-white w-40 sm:w-48 h-14 cursor-pointer transition-all"
             >
-              <div className="flex flex-row items-center space-x-3">
-                <div className={`text-2xl ${item.iconColor}`}>{item.icon}</div>
-                <div className="flex flex-col items-start space-y-1">
-                  <div className="text-sm font-semibold">{item.name}</div>
-                  <div className="text-xs text-gray-400">{item.subtext}</div>
+              <div className="flex flex-row items-center space-x-2 sm:space-x-3">
+                <div className={`text-xl sm:text-2xl ${item.iconColor}`}>
+                  {item.icon}
+                </div>
+                <div className="flex flex-col items-start space-y-0.5 sm:space-y-1">
+                  <div className="text-xs sm:text-sm font-semibold">
+                    {item.name}
+                  </div>
+                  <div className="text-[10px] sm:text-xs text-gray-400">
+                    {item.subtext}
+                  </div>
                 </div>
               </div>
             </motion.div>
@@ -63,22 +69,16 @@ const TechStackMarquee = () => {
       iconColor: "text-[#F7DF1E]",
     },
     {
-      icon: <FaHtml5 />,
-      name: "HTML",
-      subtext: "Markup Language",
-      iconColor: "text-[#E34F26]",
+      icon: <FaNodeJs />,
+      name: "Node.js",
+      subtext: "JS Runtime",
+      iconColor: "text-[#339933]",
     },
     {
       icon: <RiTailwindCssFill />,
       name: "Tailwind CSS",
       subtext: "Utility-First CSS",
       iconColor: "text-[#06B6D4]",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "Node.js",
-      subtext: "JS Runtime",
-      iconColor: "text-[#339933]",
     },
     {
       icon: <SiMongodb />,
@@ -101,6 +101,13 @@ const TechStackMarquee = () => {
       subtext: "Code Repository",
       iconColor: "text-[#181717]",
     },
+
+    {
+      icon: <SiExpress />,
+      name: "Express",
+      subtext: "Backend Framework",
+      iconColor: "text-[#ffffff]",
+    },
     {
       icon: <SiAppwrite />,
       name: "Appwrite",
@@ -113,10 +120,11 @@ const TechStackMarquee = () => {
     //   subtext: "React Framework",
     //   iconColor: "text-black",
     // },
+
     {
-      icon: <FaNodeJs />,
-      name: "Express",
-      subtext: "Backend Framework",
+      icon: <SiSocketdotio />,
+      name: "Socket.IO",
+      subtext: "WebSocket Library",
       iconColor: "text-[#ffffff]",
     },
   ];

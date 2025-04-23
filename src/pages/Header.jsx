@@ -56,7 +56,7 @@ const Header = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: navbarVisible ? 1 : 0 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
           className="w-full min-w-[320px] max-w-screen-md mx-auto py-3 sm:py-4 flex items-center justify-between"
         >
           {/* Left: Menu */}

@@ -1,5 +1,4 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 const roles = [
   "Web Developer",
@@ -80,7 +79,6 @@ const Hero = () => {
           </span>
         </h3>
 
-        {/* Web Developer text with flip animation */}
         <div className="mt-5">
           <FlipText text="Web Developer" />
         </div>
