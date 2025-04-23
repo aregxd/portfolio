@@ -7,6 +7,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
         rubik: ["Rubik", "sans-serif"],
+        pacifico: ["Pacifico", "sans-serif"],
         cubano: ["Cubano", "sans-serif"],
       },
     },
