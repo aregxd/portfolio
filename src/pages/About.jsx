@@ -45,8 +45,12 @@ const About = () => {
           transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
           className="text-neutral-300 text-base sm:text-lg md:text-xl"
         >
-          I’m a passionate web developer based in Nepal with a keen interest in
-          building dynamic, user-friendly, and responsive web applications.
+          I am a web developer based in Nepal, specializing in creating
+          responsive front-end interfaces and developing robust back-end
+          systems. I strive to build seamless and responsive web applications
+          that offer both a great user experience and solid functionality.
+          Constantly learning and refining my skills, I aim to create
+          well-rounded solutions that perform efficiently across devices.
         </motion.p>
 
         <motion.div
@@ -57,8 +61,7 @@ const About = () => {
         >
           <FaCloud className="text-3xl sm:text-4xl text-[#50c4f6]" />
           <h4 className="text-sm sm:text-lg md:text-xl text-neutral-300">
-            Excited by the web — from responsive design to full-stack
-            applications.
+            Excited by the web — from responsive design to robust back-end.
           </h4>
         </motion.div>
 

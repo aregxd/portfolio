@@ -24,15 +24,16 @@ const Projects = () => {
 
         <div className="space-y-8">
           <ProjectLink
-            title="Text."
-            description="A public chat room."
+            title="Text"
+            description="An public real-time anynomous chat room."
             imgSrc={Text}
             href="https://text5.netlify.app"
             repo="https://github.com/aprimr/text"
           />
+
           <ProjectLink
-            title="Chattly"
-            description="A bold step in tech innovation"
+            title="Shortly"
+            description="A simple, fast URL shortener."
             imgSrc={Shortly}
             href="https://www.shortly5.netlify.app"
             repo="https://github.com/aprimr/Shortly"
