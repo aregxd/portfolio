@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa6";
 
 const Footer = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show or hide the button based on scroll position
   const handleScroll = () => {
     if (window.scrollY > 300) {
       setIsVisible(true);
@@ -14,12 +12,10 @@ const Footer = () => {
     }
   };
 
-  // Scroll to the top when the button is clicked
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // Listen to the scroll event
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -32,107 +28,37 @@ const Footer = () => {
       <div className="max-w-screen-md mx-auto w-full">
         {/* Desktop Layout */}
         <div className="hidden md:flex justify-between items-center">
-          {/* Name */}
           <div className="text-sm sm:text-xl font-semibold">Aprim Regmi</div>
 
-          {/* Contact Info */}
-          <div className="flex gap-8">
-            <a
-              href="tel:9864731000"
-              className="text-transparent bg-clip-text bg-gradient-to-r from-[#00679f] to-[#50c4f6] hover:text-transparent text-sm sm:text-base"
-            >
-              +977 9864731000
-            </a>
-            <a
-              href="mailto:your.email@example.com"
-              className="text-transparent bg-clip-text bg-gradient-to-r from-[#50c4f6] to-[#00679f] hover:text-transparent text-sm sm:text-base"
-            >
-              your.email@example.com
-            </a>
+          {/* Copyright */}
+          <div className="text-sm text-gray-400">
+            © {new Date().getFullYear()} Aprim Regmi. All rights reserved.
           </div>
 
-          {/* Social Icons */}
-          <div className="flex gap-4 text-lg sm:text-xl">
+          {/* Email */}
+          <div>
             <a
-              href="https://twitter.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-200 transition duration-150"
-              aria-label="Twitter"
+              href="mailto:aprim.dev@gmail.com"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-[#50c4f6] to-[#00679f] hover:text-transparent text-md"
             >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-200 transition duration-150"
-              aria-label="GitHub"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-200 transition duration-150"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedin />
+              aprim.dev@gmail.com
             </a>
           </div>
         </div>
 
         {/* Mobile Layout */}
-        <div className="md:hidden flex flex-col items-center gap-6 text-center">
-          {/* Name */}
+        <div className="md:hidden flex flex-col items-center gap-2 text-center">
           <div className="text-md sm:text-lg font-semibold">Aprim Regmi</div>
 
-          {/* Contact Info */}
-          <div className="flex flex-col gap-2">
-            <span
-              href="tel:9864731000"
-              className="text-transparent bg-clip-text bg-gradient-to-r from-[#00679f] via-[#50c4f6] to-[#00679f] hover:text-transparent text-xs sm:text-sm"
-            >
-              +977 9864731000
-            </span>
-            <span
-              href="mailto:your.email@example.com"
-              className="text-transparent bg-clip-text bg-gradient-to-r from-[#00679f] via-[#50c4f6] to-[#00679f] hover:text-transparent text-xs sm:text-sm"
-            >
-              your.email@example.com
-            </span>
-          </div>
+          <a
+            href="mailto:aprim.dev@gmail.com"
+            className="text-transparent bg-clip-text bg-gradient-to-r from-[#00679f] via-[#50c4f6] to-[#00679f] hover:text-transparent text-xs sm:text-sm"
+          >
+            aprim.dev@gmail.com
+          </a>
 
-          {/* Social Icons */}
-          <div className="flex gap-6 text-lg sm:text-lg">
-            <a
-              href="https://twitter.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-200 transition duration-150"
-              aria-label="Twitter"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-200 transition duration-150"
-              aria-label="GitHub"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-200 transition duration-150"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedin />
-            </a>
+          <div className="text-xs sm:text-sm text-gray-400">
+            © {new Date().getFullYear()} Aprim Regmi. All rights reserved.
           </div>
         </div>
       </div>

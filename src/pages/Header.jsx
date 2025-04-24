@@ -90,7 +90,7 @@ const Header = () => {
           {/* Right: Social Icons (hidden on small screens) */}
           <div className="hidden sm:flex gap-4 text-xl">
             <a
-              href="https://twitter.com/yourusername"
+              href="https://x.com/aprimre"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
@@ -98,7 +98,7 @@ const Header = () => {
               <FaTwitter className="hover:text-[#13B0F5] transition duration-150" />
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/aprimr"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -106,7 +106,7 @@ const Header = () => {
               <FaGithub className="hover:text-[#13B0F5] transition duration-150" />
             </a>
             <a
-              href="https://www.linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/aprimregmi"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

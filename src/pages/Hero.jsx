@@ -67,7 +67,22 @@ const Hero = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-['Poppins']">
-          Hi <span className="inline-block">👋</span>,
+          Hi{" "}
+          <motion.span
+            whileHover={{
+              rotate: [0, 10, -15, 15, -10, 10, -5, 5, 0],
+              transition: { duration: 0.8, ease: "easeInOut" },
+            }}
+            whileTap={{
+              rotate: [0, 10, -15, 15, -10, 10, -5, 5, 0],
+              scale: 1.2,
+              transition: { duration: 1.5, ease: "easeInOut" },
+            }}
+            className="inline-block cursor-pointer select-none origin-bottom"
+          >
+            👋
+          </motion.span>
+          ,
         </h1>
 
         <h3 className="mt-3 sm:mt-4 text-5xl sm:text-6xl lg:text-7xl font-extrabold  font-['Poppins']">
@@ -83,10 +98,8 @@ const Hero = () => {
           <FlipText text="Web Developer" />
         </div>
 
-        <p className="mt-8 text-lg sm:text-xl lg:text-2xl font-medium text-gray-300 leading-relaxed">
-          Full-stack web developer, continuously exploring new technologies to
-          create scalable and efficient solutions. I craft impactful web
-          experiences and build tools that drive innovation.
+        <p className="mt-1 text-lg sm:text-xl lg:text-2xl font-medium text-gray-300 leading-relaxed">
+          I craft seamless web experiences and build scalable solutions.
         </p>
       </motion.div>
     </section>
